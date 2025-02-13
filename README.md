@@ -1,8 +1,4 @@
-# React + Vite
+# Conference Ticket Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application takes in information from the user and then generates a unique ticket for the user and allows the user to download their ticket.
+I built this for the stage 2 task of my HNG Internship.
