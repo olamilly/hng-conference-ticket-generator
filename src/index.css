@@ -1,0 +1,67 @@
+@import "tailwindcss";
+:root {
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+.road-rage {
+	font-family: "Road Rage", serif;
+	/* font-size: 3.5rem; */
+	line-height: 1;
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: jeju;
+	src: url("/JejuMyeongjo-Regular.ttf");
+}
+.jeju {
+	font-family: jeju, sans-serif;
+}
+button {
+	border-radius: 8px;
+	cursor: pointer;
+}
+.details-header {
+	background: linear-gradient(130deg, #249fb595, #249fb500, #0a0c1197);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+}
+* {
+	font-family: "Roboto", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	box-sizing: border-box;
+}
+button:disabled {
+	cursor: not-allowed;
+	color: lightgray;
+	background-color: gray;
+}
+#pe-none {
+	pointer-events: none;
+}
+.bg-opacity-20 {
+	background-color: rgba(0, 0, 0, 0.445);
+}
