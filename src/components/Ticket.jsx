@@ -8,10 +8,12 @@ function Ticket(props) {
 		const savedUserData = localStorage.getItem("form");
 		setticketLevel(savedLevel);
 
-		const userDataObject = JSON.parse(savedUserData);
-		getImagefromCloudinary(userDataObject.avatar);
+		const userDataObject = savedUserData ? JSON.parse(savedUserData) : null;
+		if (userDataObject && userDataObject.avatar) {
+			getImagefromCloudinary(userDataObject.avatar);
+		}
 		setUserData(userDataObject);
-	}, []);
+	}, [userData]);
 
 	const getImagefromCloudinary = async (imageUrl) => {
 		let imageUrlFetched = await fetch(imageUrl);
@@ -33,8 +35,8 @@ function Ticket(props) {
 						{/* Left section with user image */}
 						<div className="relative w-40 max-sm:my-2 sm:me-2 ">
 							<img
-								src={image}
-								alt="User"
+								src={image || userData.avatar}
+								alt="User Image"
 								className="w-full h-full object-cover"
 								crossOrigin="anonymous"
 							/>

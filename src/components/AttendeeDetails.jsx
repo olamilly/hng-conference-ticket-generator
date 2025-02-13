@@ -178,7 +178,7 @@ function AttendeeDetails(props) {
 			<div className="space-y-4">
 				<div>
 					<label htmlFor="name" className="block text-white mb-1.5">
-						Full Name <span className="text-[#24a0b5]">*</span>
+						Name <span className="text-[#24a0b5]">*</span>
 					</label>
 					<input
 						id="fullName"
