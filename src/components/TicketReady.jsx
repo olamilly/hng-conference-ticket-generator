@@ -14,7 +14,10 @@ function TicketReady(props) {
 		}
 
 		// Convert the HTML element to a canvas
-		const canvas = await html2canvas(element);
+		const canvas = await html2canvas(element, {
+			allowTaint: true,
+			useCORS: true,
+		});
 
 		// Convert the canvas to an image
 		const imgData = canvas.toDataURL("image/png");

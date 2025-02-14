@@ -91,7 +91,7 @@ function AttendeeDetails(props) {
 		const newErrors = {};
 
 		if (!formData.fullName.trim()) {
-			newErrors.fullName = "Full name is required";
+			newErrors.fullName = "Name is required";
 		}
 
 		if (!formData.email.trim()) {
